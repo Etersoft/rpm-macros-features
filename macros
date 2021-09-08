@@ -1,0 +1,8 @@
+%def_with feature_qt5_webengine
+%def_with feature_qt5_webkit
+%def_with feature_vulkan
+%def_with feature_vkd3d
+%def_with feature_faudio
+%def_with feature_opencl
+%def_with feature_icu_67
+%def_with feature_sip5
