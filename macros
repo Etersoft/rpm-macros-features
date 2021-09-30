@@ -1,8 +1,21 @@
-%def_with feature_qt5_webengine
-%def_with feature_qt5_webkit
-%def_with feature_vulkan
-%def_with feature_vkd3d
-%def_with feature_faudio
-%def_with feature_opencl
-%def_with feature_icu_67
-%def_with feature_sip5
+
+# usage: if_feature FEATURE [version]
+# examples:
+#    if_feature sip5
+#    if_feature icu 6.5
+# details: mix if_with and if_ver_gteq
+%if_feature() %if (%{expand:%%{?feature_%{1}:1}%%{!?feature_%{1}:0}}) && ( 0%{!?2:1} || "%(rpmvercmp '%{expand:%%{feature_%{1}}}' '%{?2:%2}')" >= "0")
+
+# presents in the repo
+%feature_qt5_webengine 1
+%feature_qt5_webkit 1
+%feature_vulkan 1
+%feature_vkd3d 1
+%feature_faudio 1
+%feature_opencl 1
+%feature_sip5 1
+%feature_ffmpeg 1
+
+# presents in the repo, a version matters
+%feature_qt5 5.15
+%feature_icu 6.9
