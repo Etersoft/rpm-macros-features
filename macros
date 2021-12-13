@@ -17,3 +17,5 @@
 %feature_sip5 1
 %feature_ffmpeg 1
 %feature_icu 6.9
+%feature_pcap 1.9.1
+%feature_llvm 11.0
