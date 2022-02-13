@@ -1,0 +1,3 @@
+
+# An addition for aarch64
+%feature_dotnet 6.0

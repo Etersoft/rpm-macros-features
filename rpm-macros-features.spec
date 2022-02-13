@@ -29,7 +29,20 @@ endif
 %setup
 
 %install
+dfile=''
+
+dfile=macros.%_arch
+
+%ifarch %e2k
+dfile=macros.e2k
+%endif
+
+%ifarch %ix86
+dfile=macros.i586
+%endif
+
 install -D -m644 macros %buildroot/%_rpmmacrosdir/features
+[ -n "$dfile" ] && [ -s "$dfile" ] && cat $dfile >> %buildroot/%_rpmmacrosdir/features
 
 %files
 %_rpmmacrosdir/features
