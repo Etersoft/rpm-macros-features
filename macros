@@ -19,3 +19,4 @@
 %feature_icu 6.9
 %feature_pcap 1.9.1
 %feature_llvm 11.0
+%feature_unwind 1.5.0
