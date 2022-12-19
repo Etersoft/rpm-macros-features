@@ -20,3 +20,8 @@
 %feature_pcap 1.9.1
 %feature_llvm 11.0
 %feature_unwind 1.5.0
+
+# no more php7 for Sisyphus
+%feature_php7 0
+%feature_php80 8.0.26
+%feature_php81 8.1.13
