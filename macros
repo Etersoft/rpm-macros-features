@@ -25,3 +25,4 @@
 %feature_php7 0
 %feature_php80 8.0.26
 %feature_php81 8.1.13
+%feature_php82 8.2.1
