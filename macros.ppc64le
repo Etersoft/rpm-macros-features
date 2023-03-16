@@ -1,3 +1,5 @@
 
 # An addition for ppc64le
 %feature_qt5_webengine 0
+%feature_mono 0
+%feature_gtk_sharp 0

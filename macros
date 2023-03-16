@@ -26,3 +26,5 @@
 %feature_php80 8.0.26
 %feature_php81 8.1.13
 %feature_php82 8.2.1
+%feature_mono 6.12
+%feature_gtk_sharp 2.99.4
