@@ -39,6 +39,14 @@ dfile=macros.e2k
 dfile=macros.i586
 %endif
 
+%ifarch %mips32
+dfile=macros.mips32
+%endif
+
+%ifarch %arm
+dfile=macros.arm
+%endif
+
 install -D -m644 macros %buildroot/%_rpmmacrosdir/features
 [ -n "$dfile" ] && [ -s "$dfile" ] && cat $dfile >> %buildroot/%_rpmmacrosdir/features
 

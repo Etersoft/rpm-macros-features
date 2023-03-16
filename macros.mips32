@@ -1,0 +1,5 @@
+
+# An addition for mips32
+%feature_qt5_webengine 0
+%feature_mono 0
+%feature_gtk_sharp 0
