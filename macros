@@ -30,3 +30,11 @@
 
 %feature_mono 6.12
 %feature_gtk_sharp 2.99.4
+
+#feature_ctest 3.23.2
+%feature_cmake 3.23.2
+%feature_wayland 1
+# libclickhouse-cpp-devel
+%feature_clickhouse 22.8.13.20
+
+%feature_linux_kernel_std 6.1
