@@ -38,3 +38,5 @@
 %feature_clickhouse 22.8.13.20
 
 %feature_linux_kernel_std 6.1
+
+%feature_opencv 4.7.0
